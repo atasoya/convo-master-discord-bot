@@ -1,3 +1,5 @@
+# Add
+https://discord.com/oauth2/authorize?client_id=744956642214543362&permissions=84992&scope=bot
 # Supported Language Codes
 - Afrikaans	af
 - Albanian	sq

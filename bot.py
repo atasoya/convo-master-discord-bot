@@ -258,4 +258,4 @@ async def helpme(message) :
 async def botservers(ctx):
     await ctx.send("I'm in " + str(len(client.guilds)) + " servers")
 
-client.run("NzQ0OTU2NjQyMjE0NTQzMzYy.Xzqw8A.xq665Y7peYkW1lrtXQETZJNKejk")
+client.run(token)

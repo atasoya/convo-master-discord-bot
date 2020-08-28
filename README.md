@@ -127,5 +127,3 @@
 # Made by
 
 I AM THE SIN(90)#0311
-
-Adman#4801

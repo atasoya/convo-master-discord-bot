@@ -1,3 +1,5 @@
+![Picture](https://github.com/groovykiwi/convo-master-discord-bot/blob/master/logo.jpg)
+
 # Invite bot the bot to your server
 
 [Follow this link](https://discord.com/oauth2/authorize?client_id=744956642214543362&permissions=84992&scope=bot)

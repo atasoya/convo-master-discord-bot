@@ -16,12 +16,12 @@ g = 181
 b = 238
 
 # Bot Prefix
-client = commands.Bot(command_prefix=".c")
-
+client = commands.Bot(command_prefix="c.")
+client.remove_command('help')
 # Start bot
 @client.event
 async def on_ready() :
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="cnv-helpme"))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="c.help"))
 
 # General Command
 @client.command()
@@ -62,6 +62,7 @@ async def question(message,lang = "en") :
 async def thisorthat(message,lang = "en") :
     channel = message.channel
     context = random.choice(thisorthattopic)
+    context = context.lower()
     context = translator.translate(context,dest=lang)
     title = translator.translate("This or that",dest=lang)
     embed = discord.Embed(timestamp=datetime.datetime.utcnow(), color=discord.Color.from_rgb(r,g,b))
@@ -110,10 +111,10 @@ async def add(message) :
 
 # Help
 @client.command()
-async def helpme(message) :
+async def help(message) :
     channel = message.channel
     title = "All Commands"
-    xxx = "cnv-general [language] , to get general topics"+"\n"+"cnv-question [language] , to get interesting questions"+"\n"+"cnv-thisorthat [language] , to get this or that questions"+"\n"+"cnv-personal [language] , to get personal questions"+"\n"+"cnv-wouldyourather [language] , to get would you rather questions"+"\n"+"cnv-add , to add me"+"\n"+"cnv-translate [language] [sentence] , to translate sentences"+"\n"+"cnv-languages , to see supported languages"
+    xxx = "`c.general [language]` , to get general topics"+"\n"+"`c.question [language]` , to get interesting questions"+"\n"+"`c.thisorthat [language]` , to get this or that questions"+"\n"+"`c.personal [language]` , to get personal questions"+"\n"+"`c.wouldyourather [language]` , to get would you rather questions"+"\n"+"`c.add` , to add me"+"\n"+"`c.translate [language] [sentence]` , to translate sentences"+"\n"+"`c.languages` , to see supported languages"
     embed = discord.Embed(timestamp=datetime.datetime.utcnow(), color=discord.Color.from_rgb(r,g,b))
     embed.add_field(name=title, value=xxx)
     await channel.send(embed=embed)
@@ -121,7 +122,7 @@ async def helpme(message) :
 # Debug
 @client.command()
 async def botservers(ctx):
-    await ctx.send("I'm in " + str(len(client.guilds)) + " servers")
-
+    if ctx.author.id == OWNER_ID :
+        await ctx.send("I'm in " + str(len(client.guilds)) + " servers")
 # Init
-client.run(token)
+client.run("TOKEN")

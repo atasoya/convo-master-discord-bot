@@ -1,4 +1,4 @@
-![Picture](https://github.com/groovykiwi/convo-master-discord-bot/blob/master/logo.jpg)
+![Picture](https://github.com/atasoya/convo-master-discord-bot/blob/master/logo.png)
 
 # Invite bot the bot to your server
 

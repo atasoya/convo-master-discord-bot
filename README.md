@@ -9,21 +9,24 @@
 ## Commands
 
 ```
-- cnv-helpme
-- cnv-general [language]
-- cnv-question [language]
-- cnv-personal [language]
-- cnv-thisorthat [language]
-- cnv-wouldyourather [language]
-- cnv-translate [language] [sentence]
-- cnv-languages
-- cnv-add
+- c.help
+- c.general [language]
+- c.question [language]
+- c.personal [language]
+- c.thisorthat [language]
+- c.wouldyourather [language]
+- c.translate [language] [sentence]
+- c.movie
+- c.languages
+- c.add
 ```
 
 ## Information
 
-The bot is available in multiple languages. To see the list of all of them type `cnv-languages`.  
+The bot is available in multiple languages. To see the list of all of them type `c.languages`.  
 The default language is english (en).
+
+Support server : https://discord.gg/hx2WTSs
 
 ### Made by
 

@@ -30,4 +30,4 @@ Support server : https://discord.gg/hx2WTSs
 
 ### Made by
 
-I AM THE SIN(90)#0311
+Atasoy#0001

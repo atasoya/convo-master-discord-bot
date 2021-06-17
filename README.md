@@ -30,4 +30,4 @@ Support server : https://discord.gg/hx2WTSs
 
 ### Made by
 
-Atasoy#0001
+Atasoy#2515
